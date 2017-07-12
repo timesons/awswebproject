@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AddMeChat - Snapchat 'Add Me' directory. Find online Snapchat users. Add your Snapchat username and receive new Snapchat friend requests. 100% Free + No Registration."/>
+  <meta name="keywords" content="find snapchat friends,online snapchat users,find online snapchat users,snapchat,snapchat addme,addme,snapchat online,snapchat girls,snapchat mass add,mass add,dating,flirt"/>
+  <meta property="og:url" content="http://www.addmechat.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="AddMeChat.com"/>
+  <!-- <meta property="og:image" content="http://www.addmechat.com/img/AddMeChat_160x160.png"/> -->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
+  <meta property="og:description" content="AddMeChat - Snapchat ADD ME directory. Find new Snapchat friends."/>
+  <!--<meta content="width=device-width, initial-scale=1.0, maximum-scsale=1.0, user-scalable=0" name="viewport"/>-->
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/common.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <title>AddMeChat::Add Friends on snapchat!</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <div class="head_box">
+      <a class="globalnav-link" href="/">AddMeChat</a>
+      <span class="login-in"><em class="login-in-name"></em></span>
+    </div>
+    <div id="body">
+      <div class="selection">
+        <div class="selection-block user-block">
+          <div class="Gender">Username</div>
+          <input type="text" maxlength="20" onkeyup="value=value.replace(/^[\u0391-\uFFE5]+$/,'')" class="username" placeholder="Enter your Snapchat username">
+        </div>
+        <!--用户名 登录前-->
+
+        <div class="selection-block gender-block">
+          <div class="Gender">Gender</div>
+          <select>
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+        </div>
+        <!--登陆前&登陆后-->
+
+        <div class="selection-block">
+          <div class="Gender">Age</div>
+          <select>
+            <option><18</option>
+            <option>18-25</option>
+            <option>25-30</option>
+            <option>30-35</option>
+            <option>>35</option>
+          </select>
+        </div>
+        <div class="selection-block">
+          <div class="Country">Country</div>
+          <select>
+            <option>USA</option>
+            <option>UK</option>
+            <option>CHINA</option>
+            <option>JAPAN</option>
+          </select>
+        </div>
+        <!--登陆前-->
+      </div>
+      <div class="search-result none">
+        <ul>
+          <li><b>♂</b><em>Jasonwei666</em></li>
+          <li><b>♀</b><em>Jasonwei666</em></li>
+          <li><b>♂</b><em>Jasonwei666</em></li>
+          <li><b>♀</b><em>Jasonwei666</em></li>
+          <li><b>♂</b><em>Jasonwei666</em></li>
+          <li><b>♀</b><em>Jasonwei666</em></li>
+        </ul>
+      </div>
+      <!--登陆后-->
+      <a class="addme" href="javascript:;" id="addme">+AddMe!</a>
+      <div class="tips">
+        <p>*If you want someone else to add you initiative, you'd better write and select seriously</p>
+        <p>*No registration</p>
+        <p>*Find new Snapchat friends right now</p>
+        <p>*Just type your Snapchat username to the form and click + Add Me !<p>
+        <p>*Find Snapchat girls</p>
+        <p>*Use the search filter to find Snapchat boys or girls</p>
+        <!--<p>*Also filter by age</p>-->
+      </div>
+      <!--登录前-->
+    </div>
+  </div>
+</div>
+<!--<script src="/javascripts/zepto.min.js"></script>-->
+<!--<script src="/javascripts/fastclick.min.js"></script>-->
+<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<!--<script src="/javascripts/clipboard.min.js"></script>-->
+<script>
+    $(function() {
+//        FastClick.attach(document.body);
+        $('.addme').click(function () {
+            var emty = $('.username').val();
+            if (emty === '') {
+                $('.username').addClass('err')
+            } else {
+                $('.user-block').fadeOut();
+                $('.addme').fadeOut();
+                $('.tips').fadeOut();
+                //                $('.gender-block').fadeIn();
+                $('.search-result').fadeIn();
+                if (emty.length > 15) {
+                    $('.login-in-name').html('hi, ' + emty.substring(0, 15) + "***");
+                } else {
+                    $('.login-in-name').html('hi, ' + emty);
+                }
+            }
+        });
+
+//
+//          $('.search-result ul li em').click(function () {
+////              var Url2=this;
+////              Url2.text(); // 选择对象
+////              document.execCommand("Copy"); // 执行浏览器复制命令
+//
+//
+//                  var clipBoardContent=$(this).text();
+//                  window.clipboardData.setData("Text",clipBoardContent);
+////                  alert("复制成功!");
+//
+//              alert("has already copy");
+//          })
+
+
+    });
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102243815-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

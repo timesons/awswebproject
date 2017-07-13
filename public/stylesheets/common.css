@@ -44,7 +44,11 @@ em,i,address{font-style:normal;}
 /*}*/
 
 
-div,a,img {-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;user-select:none;}
+div,a,img {-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /*-webkit-user-select: none;*/
+    /*user-select:none;*/
+}
 
 
 /*.project_list ul li{border: none;}*/

@@ -12,17 +12,17 @@
   <!-- <meta property="og:image" content="http://www.addmechat.com/img/AddMeChat_160x160.png"/> -->
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" >
   <meta property="og:description" content="AddMeChat - Snapchat ADD ME directory. Find new Snapchat friends."/>
-  <!--<meta content="width=device-width, initial-scale=1.0, maximum-scsale=1.0, user-scalable=0" name="viewport"/>-->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scsale=1.0, user-scalable=0" name="viewport"/>
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/common.css">
   <link rel="stylesheet" href="/stylesheets/main.css">
-  <title>AddMeChat::Add Friends on snapchat!</title>
+  <title>Find & Add Friends On Snapchat - Add Me Chat</title>
 </head>
 <body>
 <div class="wrapper">
   <div class="container">
     <div class="head_box">
-      <a class="globalnav-link" href="/">AddMeChat</a>
+      <a class="globalnav-link" href="/">Addmechat</a>
       <span class="login-in"><em class="login-in-name"></em></span>
     </div>
     <div id="body">
@@ -89,30 +89,30 @@
     </div>
   </div>
 </div>
-<!--<script src="/javascripts/zepto.min.js"></script>-->
-<!--<script src="/javascripts/fastclick.min.js"></script>-->
-<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<script src="/javascripts/zepto.min.js"></script>
+<script src="/javascripts/fastclick.min.js"></script>
+<!--<script src="/javascripts/jquery-2.1.1.min.js"></script>-->
 <!--<script src="/javascripts/clipboard.min.js"></script>-->
 <script>
     $(function() {
-//        FastClick.attach(document.body);
-        $('.addme').click(function () {
-            var emty = $('.username').val();
-            if (emty === '') {
-                $('.username').addClass('err')
-            } else {
-                $('.user-block').fadeOut();
-                $('.addme').fadeOut();
-                $('.tips').fadeOut();
-                //                $('.gender-block').fadeIn();
-                $('.search-result').fadeIn();
-                if (emty.length > 15) {
-                    $('.login-in-name').html('hi, ' + emty.substring(0, 15) + "***");
-                } else {
-                    $('.login-in-name').html('hi, ' + emty);
-                }
-            }
-        });
+        FastClick.attach(document.body);
+          $('.addme').click(function () {
+              var emty = $('.username').val();
+              if (emty === '') {
+                  $('.username').addClass('err')
+              } else {
+                  $('.user-block').hide();
+                  $('.addme').hide();
+                  $('.tips').hide();
+                  //                $('.gender-block').fadeIn();
+                  $('.search-result').show();
+                  if (emty.length > 15) {
+                      $('.login-in-name').html('hi, ' + emty.substring(0, 15) + "***");
+                  } else {
+                      $('.login-in-name').html('hi, ' + emty);
+                  }
+              }
+          });
 
 //
 //          $('.search-result ul li em').click(function () {
